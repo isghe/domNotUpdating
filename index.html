@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="author" content="Isidoro Ghezzi © 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022">
+	<meta name="viewport" content="initial-scale=1">
+	<title>domNotUpdating</title>
+	<script>
+		let counter = 0;
+		function myFunction() {
+			++counter;
+			const message = 'test - ' + counter;
+			document.getElementById("id-button").textContent = message;
+			setTimeout (() =>{
+				alert (message);
+			});
+		}
+		</script>
+</head>
+<body>
+	<h1 id='title'>domNotUpdating</h1>
+	<button id='id-button' onclick="myFunction()">test - 0</button>
+</body>
+</html>
