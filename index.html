@@ -9,7 +9,7 @@
 		let counter = 0;
 		function myFunction() {
 			++counter;
-			const message = 'test - ' + counter;
+			const message = 'Update - ' + counter;
 			document.getElementById("id-title").textContent = "domUpdated";
 			document.title = "domUpdated";
 			document.getElementById("id-button").textContent = message;
@@ -21,6 +21,6 @@
 </head>
 <body>
 	<h1 id='id-title'>domNotUpdating</h1>
-	<button id='id-button' onclick="myFunction()">test - 0</button>
+	<button id='id-button' onclick="myFunction()">Update - 0</button>
 </body>
 </html>
